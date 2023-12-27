@@ -12,16 +12,23 @@
 
 选择-**个人测试证书（免费证书）**
 
-<img src="./images/购买SSL证书2.png" />
+<!-- <img src="./images/购买SSL证书2.png" /> -->
+
+![](./images/购买SSL证书2.png)
 
 ### 2. 创建免费证书
 
 点击创建证书
 
-<img src="./images/创建证书1.png" />
+<!-- <img src="./images/创建证书1.png" /> -->
+
+![](./images/创建证书1.png)
 
 填写相关信息，然后等待通过
-<img src="./images/创建证书2.png" />
+
+<!-- <img src="./images/创建证书2.png" /> -->
+
+![](./images/创建证书2.png)
 
 ### 3. 下载 SSL 证书到服务器
 
@@ -29,7 +36,9 @@
 
 在服务器类型为 `Nginx` 的操作列，单击下载。
 
-<img src="./images/下载SSL证书.png" />
+<!-- <img src="./images/下载SSL证书.png" /> -->
+
+![](./images/下载SSL证书.png)
 
 ### 4. 上传 SSL 证书到服务器
 
@@ -43,7 +52,9 @@ mkdir cert
 
 使用`WinSCP` 将证书文件和私钥文件上传到 Nginx 服务器的证书目录（`/etc/nginx/cert`）
 
-<img src="./images/上传SSL证书到服务器.png" />
+<!-- <img src="./images/上传SSL证书到服务器.png" /> -->
+
+![](./images/上传SSL证书到服务器.png)
 
 ### 5. 修改与证书相关的配置
 
@@ -105,7 +116,10 @@ server {
 ```
 
 配置完成如下：
-<img src="./images/编辑Nginx配置文件nginx.conf，修改与证书相关的配置.png" />
+
+<!-- <img src="./images/编辑Nginx配置文件nginx.conf，修改与证书相关的配置.png" /> -->
+
+![](./images/编辑Nginx配置文件nginx.conf，修改与证书相关的配置.png)
 
 ### 6. 重启 Nginx 服务。
 
@@ -125,4 +139,6 @@ sudo systemctl restart nginx
 
 尝试在配置文件中写两个才能不手动写 https 的情况下访问 https
 
- <img src="./images/需要写两个才行.png" />
+ <!-- <img src="./images/需要写两个才行.png" /> -->
+
+![](./images/需要写两个才行.png)
