@@ -1,6 +1,6 @@
 # 服务器配置 https
 
-## 一、安装 SSL 证书
+## 一、SSL 证书及 nginx 配置
 
 ### 1. 购买免费 SSL 证书
 
@@ -105,12 +105,22 @@ server {
 配置完成如下：
 <img src="./images/编辑Nginx配置文件nginx.conf，修改与证书相关的配置.png" />
 
-6. 重启 Nginx 服务。
+### 6. 重启 Nginx 服务。
 
 ```bash
 sudo systemctl restart nginx
 ```
 
-7. 检查是否配置正确
+### 7. 检查是否配置正确
 
 输入 https 网址可正常访问:[https://zbin.top/](https://zbin.top/)
+
+## 二、出现的问题
+
+上面只写了`www.zbin.top`，不管是`https://www.zbin.top`或者`www.zbin.top`都是跳转到`https`
+
+但是在不加`https`直接访问`zbin.top`不会跳转到 https，而是 http:`http://zbin.top/`，完整写上 https 才会跳转到`https://zbin.top/`
+
+尝试在配置文件中写两个才能不手动写 https 的情况下访问 https
+
+ <img src="./images/需要写两个才行.png" />
