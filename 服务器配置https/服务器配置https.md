@@ -6,7 +6,9 @@
 
 登录阿里云，在[数字证书管理服务](https://yundunnext.console.aliyun.com/?spm=a2c4g.11186623.0.0.33923799vcI3pw&p=cas#/certExtend/free/cn-hangzhou)购买免费证书
 
-<img src="./images/购买SSL证书1.png" />
+<!-- <img src="./images/购买SSL证书1.png" /> -->
+
+![](./images/购买SSL证书1.png)
 
 选择-**个人测试证书（免费证书）**
 
