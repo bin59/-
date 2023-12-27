@@ -28,29 +28,29 @@ https://github.com/Nyr/openvpn-install/blob/master/openvpn-install.sh
 
 1. 选择服务器的 IP 地址
 
-![](.img/openVpn/1.jpg)
+![](../images/利用OpenVpn搭建VPN服务器/1.jpg)
 
 2. 服务器公网 IP 或者自己的域名
-   ![](.img/openVpn/2.jpg)
+   ![](../images/利用OpenVpn搭建VPN服务器/2.jpg)
 
 3. 直接选择推荐的 UDP 协议，安全，不被端口探测
-   ![](.img/openVpn/3.jpg)
+   ![](../images/利用OpenVpn搭建VPN服务器/3.jpg)
 
 4. 输入 VPN 服务的端口，一般使用默认的即可
-   ![](.img/openVpn/4.jpg)
+   ![](../images/利用OpenVpn搭建VPN服务器/4.jpg)
 
 5. 选择 DNS 服务器，一般使用本机的配置即可
-   ![](.img/openVpn/5.jpg)
+   ![](../images/利用OpenVpn搭建VPN服务器/5.jpg)
 
 6. 生成一个客户端账号
-   ![](.img/openVpn/6.jpg)
+   ![](../images/利用OpenVpn搭建VPN服务器/6.jpg)
 
 7. 回车安装
-   ![](.img/openVpn/7.jpg)
+   ![](../images/利用OpenVpn搭建VPN服务器/7.jpg)
 
 8. 安装成功，并且提示生成的客户端账号配置文件路径
 
-![](.img/openVpn/安装成功，生成的客户端配置文件路径.jpg)
+![](../images/利用OpenVpn搭建VPN服务器/安装成功，生成的客户端配置文件路径.jpg)
 
 ```
 /root/pande.ovpn
