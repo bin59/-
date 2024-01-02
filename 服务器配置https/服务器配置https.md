@@ -142,3 +142,33 @@ sudo systemctl restart nginx
  <!-- <img src="./images/需要写两个才行.png" /> -->
 
 ![](./images/需要写两个才行.png)
+
+然而并没有正确跳转，而是显示：
+
+![](./images/并没有正确跳转.png)
+
+一顿百度后，找到一个可行的配置
+
+只需在原本配置`https`的`server`下添加`location`即可
+
+```bash
+http {
+   # .........
+    # .........
+    server {
+        #监听443端口
+        listen 443;
+        # .........
+        # .........
+        location / {
+            proxy_pass  http://xxx.xxx.xxx.xxx:xx #   http://公网地址:项目端口号;
+        }
+    }
+    # .........
+    # .........
+}
+```
+
+至此，正确访问
+
+![](./images/正确访问.png)
