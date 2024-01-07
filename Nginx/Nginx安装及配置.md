@@ -1,12 +1,12 @@
 # Nginx 安装及配置
 
-### 安装
+## 安装
 
 ```bash
 apt-get install nginx
 ```
 
-### 目录说明
+1. 目录说明
 
 ```
 /usr/sbin/nginx：主程序，启动文件
@@ -15,20 +15,34 @@ apt-get install nginx
 /var/log/nginx：存放日志
 ```
 
-### 启动
+2. 启动
 
 ```bash
 service nginx start
 ```
 
-### 重启
+3. 重启
 
 ```bash
 service nginx restart
 ```
 
-### 停止
+4. 停止
 
 ```bash
 service nginx stop
+```
+
+## 配置
+
+. 重启 Nginx 服务。
+
+```bash
+sudo systemctl restart nginx
+```
+
+. 检测配置文件是否正确
+
+```bash
+nginx -t
 ```
